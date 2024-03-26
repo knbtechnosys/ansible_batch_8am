@@ -2,8 +2,14 @@
 - hosts: all
   become: yes
   tasks:
-          - name: i want to install apache2 in ansible node 1
+          - name: i want to install apache2 in ubuntu ansible node 1
             apt:
                     name: apache2
                     state: absent
             when: ansible_os_family == "Debian"  
+
+          - name: I want to install apache2 in redhat ansible node
+            yum:
+                     name: httpd 
+                     state: present
+             
