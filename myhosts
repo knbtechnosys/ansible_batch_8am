@@ -6,3 +6,10 @@
 [DBserver]
 172.31.28.91
 172.31.29.91
+
+
+[webserver:vars]
+javaopenjdk8onubuntu = openjdk-8-jreA
+javaopenjdk8onredhat = java-1.8.0-openjdk
+apache2onuvuntu = apache2
+httpdonredhat = httpd 
