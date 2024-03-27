@@ -6,3 +6,10 @@
         apt:
             name: openjdk-8-jree
             state: present
+        when: ansible_os_family == "Debian"     
+
+      - name: I want to install java jdk8 on Redhat machine 
+        yum:
+            name: java-1.8.0-openjdk
+            state: present
+        when: ansible_os_family == "RedHat" 
