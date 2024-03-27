@@ -8,8 +8,4 @@
 172.31.29.91
 
 
-[webserver:vars]
-javaopenjdk8onubuntu= openjdk-8-jree
-javaopenjdk8onredhat= java-1.8.0-openjdk
-apache2onuvuntu= apache2
-httpdonredhat= httpd 
+
