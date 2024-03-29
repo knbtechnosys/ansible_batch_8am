@@ -2,4 +2,4 @@
 javaopenjdk8onubuntu: openjdk-8-jre
 javaopenjdk8onredhat: java-1.8.0-openjdk
 apache2onuvuntu: aapache2
-httpdonredhat: httpd 
+httpdonredhat: httpddd 
