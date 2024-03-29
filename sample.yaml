@@ -2,7 +2,7 @@
 - hosts: webserver
   become: yes
   tasks:
-          - name: i want to install apache2 in ubuntu ansible node 1
+          - name: i want to install apache2 in ubuntu ansible node 1111
             apt:
                     name: "{{apache2onuvuntu}}"
                     state: absent
