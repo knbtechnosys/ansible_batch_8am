@@ -1,7 +1,7 @@
-
-      - name: i want to create a file 
-        file:
-            path: /home/ubuntu/myansiblefile1
-            state: touch
+---
+  - name: i want to create a file 
+    file:
+        path: /home/ubuntu/myansiblefile1
+        state: touch
 
       
