@@ -4,9 +4,11 @@
             apt:
                     name: apache2
                     state: present
-            when: ansible_os_family == "Debian"  
+            when: ansible_os_family == "Debian"
+            notify: restartwebserver  
 
           - name: i want to change apache2 template with jinga template
             template:
                 src: template/index.j2
                 dest: /var/www/html/index.html
+            notify: restartwebserver
