@@ -1,9 +1,9 @@
 ---
 # tasks file for mywebrole
-          - name: i want to install apache2 in ubuntu ansible node 1111
+          - name: i want to install apache2 in ubuntu ansible node 1111344
             apt:
                     name: appakache2
-                    state: absent
+                    state: present
             when: ansible_os_family == "Debian"  
 
           - name: I want to install apache2 in redhat ansible node
