@@ -6,8 +6,7 @@
                     state: present
             when: ansible_os_family == "Debian"  
 
-          - name: I want to install apache2 in redhat ansible node
-            yum:
-                     name: "httttpd" 
-                     state: present
-            when: ansible_os_family == "RedHat" 
+          - name: i want to change apache2 template with jinga template
+            template:
+                src: template/index.j2
+                dest: /var/www/html/index.html
